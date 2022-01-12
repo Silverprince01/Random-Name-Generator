@@ -124,15 +124,16 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   color: white;
+  padding: 0px 30px;
 }
 
 #final .result {
-  font-size: 35px;
+  font-size: 30px;
   margin-bottom: 20px;
 }
 
 #final .partner {
-  font-size: 35px;
+  font-size: 30px;
   margin-bottom: 20px;
 }
 
@@ -147,6 +148,7 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 30px;
 }
 
 .com {
@@ -192,13 +194,13 @@ h3 {
 }
 
 .hus {
-  font-size: 35px;
+  font-size: 25px;
   margin-bottom: 10px;
   color: white;
 }
 
 .part {
-  font-size: 30px;
+  font-size: 25px;
   margin-bottom: 20px;
   color: white;
 }
