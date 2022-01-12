@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="final.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html"><div class="head">Home</div></a>
+        <a href="#about"><div class="head">About</div></a>
+        <a href="#cont"><div class="head">Contact</div></a>
+      </nav>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </header>
+    <section>
+      <h3>Click Start to begin</h3>
+      <div class="but">
+        <input
+          type="button"
+          id="start"
+          onclick="begin()"
+          value="Start"
+          class="star"
+        />
+      </div>
+      <div class="info">
+        <p>
+          Name:
+          <input
+            class="gen"
+            type="text"
+            maxlength="30"
+            size="15"
+            id="fname"
+            required
+          />
+        </p>
+        <p>Gender:</p>
+        <p>
+          Male<input
+            type="radio"
+            name="gender"
+            value="Male"
+            id="genderMale"
+            required
+          />
+        </p>
+        <p>
+          Female<input
+            type="radio"
+            name="gender"
+            value="Female"
+            id="genderFemale"
+            required
+          />
+        </p>
+      </div>
+      <div id="final">
+        <div class="result"></div>
+        <span class="partner"></span>
+      </div>
+      <div id="huswif">
+        <div class="hus"></div>
+        <div class="part"></div>
+      </div>
+      <div class="com">
+        <input type="button" class="co" value="Begin" onclick="begin()" />
+      </div>
+
+      <a href="final.html" class="refresh"></a>
+    </section>
+
+    <footer>
+      <div class="about">
+        <p>
+          You get to know your life time partner in just a click of a button;
+          ps: Just for fun sake
+        </p>
+      </div>
+      <div id="cont" class="contact">
+        <ul>
+          <li>Tel: +2348086877025</li>
+          <li>Linkedin: linkedin.com/badru-fuad-alabi-b56497216</li>
+          <li>E-mail:badrufuadalabi@gmail.com</li>
+        </ul>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
