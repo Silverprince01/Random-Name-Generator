@@ -106,10 +106,6 @@ section .info {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
-  height: 10rem;
-  margin: 10px 5px;
 }
 
 section .info p {
