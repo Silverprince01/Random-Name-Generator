@@ -6,7 +6,7 @@
 }
 
 body {
-  background: -webkit-linear-gradient(#ff8f70, #ff3d54);
+  background: url("img/bg-pattern-intro.svg"), -webkit-linear-gradient(#ff8f70, #ff3d54);
   font-family: sans-serif;
 }
 
@@ -15,8 +15,8 @@ li {
 }
 
 header {
+  color: white;
   background-color: #25252d;
-  max-width: 100%;
   height: 3rem;
   overflow: hidden;
 }
@@ -26,44 +26,58 @@ header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: blanchedalmond;
+}
+
+header nav .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 100%;
+  gap: 50px;
 }
 
-header a {
-  text-decoration: none;
-}
-
-header .head {
-  text-decoration: none;
-  color: white;
-}
-
-header .head:hover {
+header nav .menu .item:hover {
   text-decoration: underline;
-  opacity: 6;
-  color: blanchedalmond;
-  cursor: pointer;
 }
 
-h3 {
-  margin-top: 10px;
+section {
+  overflow: hidden;
+}
+
+section h3 {
+  margin-top: 50px;
   text-align: center;
   color: white;
   font-size: 30px;
   margin-bottom: 50px;
 }
 
-.but {
+section .but {
   text-align: center;
 }
 
-.but .star {
+section .but .star {
   text-align: center;
   color: #ff525d;
   background-color: white;
@@ -74,13 +88,13 @@ h3 {
   height: 50px;
 }
 
-.but .star:hover {
+section .but .star:hover {
   background-color: transparent;
   color: white;
   border: white solid 2px;
 }
 
-.info {
+section .info {
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -92,17 +106,21 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.info p {
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  height: 10rem;
   margin: 10px 5px;
 }
 
-.info p input {
+section .info p {
+  margin: 10px 5px;
+}
+
+section .info p input {
   outline: none;
 }
 
-.info p input.gen {
+section .info p input.gen {
   font-size: 20px;
   margin-top: 50px;
   height: 30px;
@@ -112,7 +130,7 @@ h3 {
   padding: 10px;
 }
 
-#final {
+section #final {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,17 +145,17 @@ h3 {
   padding: 0px 30px;
 }
 
-#final .result {
+section #final .result {
   font-size: 30px;
   margin-bottom: 20px;
 }
 
-#final .partner {
+section #final .partner {
   font-size: 30px;
   margin-bottom: 20px;
 }
 
-#huswif {
+section #huswif {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -151,11 +169,11 @@ h3 {
   padding: 0 30px;
 }
 
-.com {
+section .com {
   text-align: center;
 }
 
-.com .co {
+section .com .co {
   text-align: center;
   color: #ff525d;
   background-color: white;
@@ -166,18 +184,18 @@ h3 {
   height: 50px;
 }
 
-.com .co:hover {
+section .com .co:hover {
   background-color: transparent;
   color: white;
   border: white solid 2px;
 }
 
-.restart {
+section .restart {
   text-align: center;
   margin-top: 30px;
 }
 
-.restart .resbutton {
+section .restart .resbutton {
   color: #ff525d;
   background-color: white;
   padding: 15px;
@@ -187,19 +205,19 @@ h3 {
   height: 50px;
 }
 
-.restart .resbutton:hover {
+section .restart .resbutton:hover {
   background-color: transparent;
   color: white;
   border: white solid 2px;
 }
 
-.hus {
+section .hus {
   font-size: 25px;
   margin-bottom: 10px;
   color: white;
 }
 
-.part {
+section .part {
   font-size: 25px;
   margin-bottom: 20px;
   color: white;
@@ -207,9 +225,8 @@ h3 {
 
 footer {
   color: white;
-  margin-top: 30px;
   background-color: #25252d;
-  height: 35vh;
+  height: 20vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -223,14 +240,31 @@ footer {
   font-size: 15px;
   padding: 0px 10px;
   max-width: 100%;
+  position: relative;
+  top: 150px;
+}
+
+footer .about {
+  margin-top: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  color: blanchedalmond;
+  text-decoration: underline;
+}
+
+footer li {
+  margin: 10px 0;
 }
 
 @media only screen and (max-width: 500px) {
   .hamburger {
     display: block;
-    position: relative;
-    left: 40%;
-    top: 25%;
   }
   .hamburger.active .bar:nth-child(2) {
     position: fixed;
@@ -256,8 +290,8 @@ footer {
     transition: all 0.3s ease-in-out;
     background-color: white;
   }
-  nav {
-    position: fixed;
+  .menu {
+    position: absolute;
     left: -100%;
     top: 48px;
     gap: 0;
@@ -270,12 +304,11 @@ footer {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     background-color: #25252d;
-    height: 90px;
   }
-  nav .head {
-    margin: 8px 0;
+  .menu .item {
+    margin: 5px 0;
   }
-  nav.active {
+  .menu.active {
     left: 0;
   }
   footer {

@@ -13,17 +13,10 @@ let refresh = document.querySelector(".refresh")
 let userInfo = document.querySelector(".info");
 let start = document.querySelector("#start");
 const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector("nav");
-// let x = document.getElementById("fname").value;
+const navMenu = document.querySelector(".menu");
 
 function begin() {
-    // if(userInfo.style.display === 'block'){
-    //     userInfo.style.display = 'none';
-    // }    else{
-    //     userInfo.style.display = 'block';
-    // }
     start.style.display = 'none';
-
     let x = document.getElementById("fname").value;
     result.innerHTML = '<h1>Congratulations</h1>'  ;
     partner.innerHTML = x;
