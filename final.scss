@@ -162,7 +162,7 @@ section {
 footer {
   color: white;
   background-color: hsl(240, 10%, 16%);
-  height: 20vh;
+  min-height: 20vh;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;

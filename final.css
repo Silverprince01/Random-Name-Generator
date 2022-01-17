@@ -222,7 +222,7 @@ section .part {
 footer {
   color: white;
   background-color: #25252d;
-  height: 20vh;
+  min-height: 20vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
